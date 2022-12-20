@@ -15,7 +15,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_19_164505) do
     t.string "email"
     t.string "username"
     t.integer "amount"
-    t.integer "phone"
+    t.integer "phone", limit: 8
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
