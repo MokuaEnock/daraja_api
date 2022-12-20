@@ -4,7 +4,7 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.string :email
       t.string :username
       t.integer :amount
-      t.integer :phone
+      t.integer :phone, limit: 8
 
       t.timestamps
     end
